@@ -1,15 +1,15 @@
 const Home = () => {
     return (
         <div>
-             <div style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0, color: "#333" }}>
+        <div style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0, color: "#333" }}>
             {/* Header */}
             <header style={{ backgroundColor: "#3EB489", color: "white", padding: "15px 0", textAlign: "center" }}>
                 <h1>Our Services</h1>
             </header>
-
+    
             {/* Main Content */}
             <div style={{ maxWidth: "800px", margin: "20px auto", padding: "20px" }}>
-
+    
                 {/* Introduction Section */}
                 <section style={{ marginBottom: "20px" }}>
                     <h2 style={{ color: "#444", textAlign: "center" }}>Welcome to Foodess</h2>
@@ -17,7 +17,7 @@ const Home = () => {
                         At <span style={{ color: "#e74c3c", fontWeight: "bold" }}>Foodess</span>, we offer a variety of services designed to enhance your dining experience. Our goal is to ensure that every guest leaves satisfied and eager to return.
                     </p>
                 </section>
-
+    
                 {/* Services List Section */}
                 <section style={{ marginBottom: "20px" }}>
                     <h2 style={{ color: "#444", textAlign: "center" }}>Our Services</h2>
@@ -40,7 +40,7 @@ const Home = () => {
                         </li>
                     </ul>
                 </section>
-
+    
                 {/* Closing Section */}
                 <section style={{ marginBottom: "20px" }}>
                     <h2 style={{ color: "#444", textAlign: "center" }}>Visit Us Today!</h2>
@@ -50,7 +50,8 @@ const Home = () => {
                 </section>
             </div>
         </div>
-        </div>
+    </div>
+    
     )
     }
     
