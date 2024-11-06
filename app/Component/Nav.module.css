@@ -35,6 +35,7 @@
 /* Hover effect jab user link par hover kare */
 .navLink:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  gap: 10px;
 }
 
 /* Media query jab screen width 600px se chhoti ho, tab layout change karna */
