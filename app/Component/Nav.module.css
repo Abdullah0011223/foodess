@@ -1,0 +1,59 @@
+/* Nav.module.css */
+
+/* Main container ke liye styling, background color aur flex layout define kiya gaya hai */
+.navContainer {
+  display: flex;
+  background-color: #ff909c;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo ke text ka color aur margin set kiya gaya hai */
+.logo {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Navigation list ko flex display aur padding/margin reset kiya gaya hai */
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Individual links ke liye styling, jisme padding, border radius aur color defined hai */
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect jab user link par hover kare */
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Media query jab screen width 600px se chhoti ho, tab layout change karna */
+@media (max-width: 600px) {
+  /* Nav container ko column layout mein convert karna aur left alignment set karna */
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Nav list ko vertical layout mein set karna */
+  .navList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Link padding ko chhota aur left alignment dena */
+  .navLink {
+    padding: 8px 12px;
+    text-align: left;
+  }
+}

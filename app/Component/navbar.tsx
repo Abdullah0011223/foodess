@@ -1,36 +1,42 @@
-import Link from "next/link"
+import Link from "next/link";
+import styles from "./Nav.module.css"; // CSS module import kiya gaya hai
 
 export default function Nav() {
-    return (
-        <div style={{ display: "flex", backgroundColor: "#ff909c", padding: "10px", justifyContent: "space-between", alignItems: "center" }}>
-    <h1 style={{ color: "#ffffff", margin: 0 }}>Foodess</h1>
-    <ul style={{ listStyleType: "none", margin: 0, padding: 0, display: "flex" }}>
-        <li style={{ marginLeft: "20px" }}>
-            <Link href="/home" style={{ color: "white", textDecoration: "none", padding: "10px 15px", borderRadius: "5px", transition: "background-color 0.3s" }}>
-                Home
-            </Link>
+  return (
+    <div className={styles.navContainer}>
+      {/* Main container ke liye class use ki */}
+      <h1 className={styles.logo}>Foodess</h1>{" "}
+      {/* Logo ke liye class apply ki */}
+      <ul className={styles.navList}>
+        {" "}
+        {/* Navigation list ke liye class apply ki */}
+        <li>
+          <Link href="/home" className={styles.navLink}>
+            Home
+          </Link>{" "}
+          {/* Link styling ke liye class apply ki */}
         </li>
-        <li style={{ marginLeft: "20px" }}>
-            <Link href="/about" style={{ color: "white", textDecoration: "none", padding: "10px 15px", borderRadius: "5px", transition: "background-color 0.3s" }}>
-                About
-            </Link>
+        <li>
+          <Link href="/about" className={styles.navLink}>
+            About
+          </Link>
         </li>
-        <li style={{ marginLeft: "20px" }}>
-            <Link href="/services" style={{ color: "white", textDecoration: "none", padding: "10px 15px", borderRadius: "5px", transition: "background-color 0.3s" }}>
-                Services
-            </Link>
+        <li>
+          <Link href="/services" className={styles.navLink}>
+            Services
+          </Link>
         </li>
-        <li style={{ marginLeft: "20px" }}>
-            <Link href="/menu" style={{ color: "white", textDecoration: "none", padding: "10px 15px", borderRadius: "5px", transition: "background-color 0.3s" }}>
-                Menu
-            </Link>
+        <li>
+          <Link href="/menu" className={styles.navLink}>
+            Menu
+          </Link>
         </li>
-        <li style={{ marginLeft: "20px" }}>
-            <Link href="/contact" style={{ color: "white", textDecoration: "none", padding: "10px 15px", borderRadius: "5px", transition: "background-color 0.3s" }}>
-                Contact
-            </Link>
+        <li>
+          <Link href="/contact" className={styles.navLink}>
+            Contact
+          </Link>
         </li>
-    </ul>
-</div>
-    )
+      </ul>
+    </div>
+  );
 }
